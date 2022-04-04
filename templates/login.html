@@ -1,5 +1,8 @@
 <html>
-
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
 <body>
 {{nav.top.render()}}
 <p>Log In Here</p>
@@ -8,4 +11,5 @@
     <p><input type=submit value=Login>
 </form>
 </body>
+
 </html>
