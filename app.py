@@ -4,7 +4,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    def index():
+    if 'username' in session:
+        return 'Hey there, %s' % escape(session['username']', how is your day going?')
+    return 'You are not logged in'
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -29,4 +32,4 @@ def logout():
 
 @app.route('/secret')
 def secret_message():
-    return 'This cucumber cries at midnight!'
+    return 'The cucumber cries at midnight!'
