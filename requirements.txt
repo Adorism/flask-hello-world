@@ -1,2 +1,10 @@
 Flask
 Gunicorn
+Fabric
+Flask-SQLAlchemy
+Flask-WTF
+WTForms
+coverage
+# ecdsa
+# paramiko
+# pycrypto
